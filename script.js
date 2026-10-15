@@ -1,8 +1,8 @@
 /* ===== ORGANIZATION DETAILS — fill these in and the whole site updates ===== */
 const TAKAMO = {
-  email: "",          // e.g. "info@takamohelpinghands.org"
-  phone: "",          // e.g. "(555) 555-0123"
-  location: "Buea, Cameroon",
+  email: "takamofoundationthh@gmail.com",
+  phone: "+237 671 610 788",
+  location: "Muea, Buea · Southwest Region, Cameroon",
   donateUrl: "",      // your online donation page (PayPal, Zeffy, GoFundMe…) — leave empty to use the options below
   // Donation details shown in the "Ways to donate" box. Replace "To be added" when ready.
   donate: [
@@ -12,7 +12,10 @@ const TAKAMO = {
   ],
   formEndpoint: "",   // optional: Formspree/Getform URL for the "I want to help" form
   social: [           // e.g. { name: "Facebook", url: "https://facebook.com/..." }
-    { name: "TikTok @takamo237", url: "https://www.tiktok.com/@takamo237" }
+    { name: "TikTok @takamo237", url: "https://www.tiktok.com/@takamo237" },
+    { name: "Instagram @takamo237", url: "https://www.instagram.com/takamo237" },
+    { name: "Facebook: Takamo Helping Hands THH", url: "" },   // paste page link when ready
+    { name: "YouTube: Takamo Helping Hands THH", url: "" }     // paste channel link when ready
   ]
 };
 /* =========================================================================== */
@@ -34,7 +37,7 @@ const TAKAMO = {
   const digits = TAKAMO.phone.replace(/\D/g, "");
   $$("[data-phone]").forEach(d => (d.innerHTML = TAKAMO.phone ? `<a href="tel:+${digits.length === 10 ? "1" + digits : digits}">${TAKAMO.phone}</a>` : soon("Phone")));
   $$("[data-location]").forEach(d => (d.innerHTML = TAKAMO.location || soon("Location")));
-  $$("[data-social]").forEach(d => (d.innerHTML = TAKAMO.social.length ? TAKAMO.social.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`).join(" · ") : soon("Social links")));
+  $$("[data-social]").forEach(d => (d.innerHTML = TAKAMO.social.length ? `<ul class="social">${TAKAMO.social.map(s => `<li>${s.url ? `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>` : s.name}</li>`).join("")}</ul>` : soon("Social links")));
   $$("[data-year]").forEach(s => (s.textContent = new Date().getFullYear()));
 
   /* Header + mobile menu */
