@@ -3,7 +3,7 @@
 Website for Takamo Helping Hands, a humanitarian organization. Static site (HTML, CSS, JS), no build step.
 
 ## Fill in
-Founder photo: add `images/founder.jpg` (portrait works best).
+Founder photo: `images/founder.jpg`.
 
 Videos: `videos/` (compressed MP4 + poster image each). Add more by following the same pattern in the "Our work in action" section.
 
