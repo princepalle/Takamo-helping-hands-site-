@@ -244,3 +244,10 @@ input:focus, textarea:focus { outline: none; border-color: var(--amber); box-sha
 .social { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .social a { color: #8a5300; }
 .info div:first-child { grid-column: 1 / -1; }
+.photo-wide { margin-top: 48px; margin-bottom: 0; }
+.photo-wide img, .story-photo img { width: 100%; border-radius: var(--radius); box-shadow: 0 24px 50px -30px rgba(0,0,0,.45); }
+.photo-wide img { aspect-ratio: 16 / 8; object-fit: cover; object-position: center 55%; }
+.photo-wide figcaption, .story-photo figcaption { margin-top: 10px; font-size: .92rem; color: var(--muted); }
+.story-photo { margin: 28px 0 0; }
+.story-photo img { aspect-ratio: 4 / 3; object-fit: cover; }
+@media (max-width: 560px) { .photo-wide img { aspect-ratio: 4 / 3; } }
