@@ -184,6 +184,7 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 .donate-list div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
 .donate-list dt { font-weight: 700; color: var(--white); }
 .donate-list dd { margin: 0; color: var(--amber); font-weight: 600; text-align: right; }
+.donate-list dd small { display: block; color: rgba(255,255,255,.75); font-weight: 400; font-size: .85rem; }
 .tee { margin: 28px 0 0; }
 .tee img { border-radius: var(--radius); }
 .tee figcaption { margin-top: 10px; font-size: .92rem; color: var(--muted); }
@@ -284,5 +285,5 @@ input:focus, textarea:focus { outline: none; border-color: var(--amber); box-sha
 .photo-wide figcaption, .story-photo figcaption { margin-top: 10px; font-size: .92rem; color: var(--muted); }
 .story-photo { margin: 28px 0 0; }
 .story-photo img { aspect-ratio: 4 / 3; object-fit: cover; }
-@media (max-width: 560px) { .photo-wide img { aspect-ratio: 4 / 3; } .gal { gap: 10px; } .gal figcaption { left: 6px; right: 6px; bottom: 6px; width: fit-content; font-size: .74rem; padding: 3px 8px; } }
+@media (max-width: 560px) { .donate-list div { flex-direction: column; gap: 2px; } .donate-list dd { text-align: left; } .photo-wide img { aspect-ratio: 4 / 3; } .gal { gap: 10px; } .gal figcaption { left: 6px; right: 6px; bottom: 6px; width: fit-content; font-size: .74rem; padding: 3px 8px; } }
 .founder-photo figcaption { background: var(--ink); padding: 8px 12px; border-radius: 6px; }

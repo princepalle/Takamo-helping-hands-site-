@@ -4,11 +4,10 @@ const TAKAMO = {
   phone: "+237671610788",
   location: "Muea-Buea, Southwest Cameroon",
   donateUrl: "",      // your online donation page (PayPal, Zeffy, GoFundMe…) — leave empty to use the options below
-  // Donation details shown in the "Ways to donate" box. Replace "To be added" when ready.
+  // Donation details shown in the "Ways to donate" box. "name" (optional) is the account name.
   donate: [
-    { method: "MTN Mobile Money", detail: "To be added" },
-    { method: "Orange Money", detail: "To be added" },
-    { method: "Online (card / PayPal)", detail: "To be added" }
+    { method: "MTN Mobile Money", detail: "+237 671 610 788", name: "Nene Alain Giresse Takamo" },
+    { method: "Online (card / PayPal)", detail: "Coming soon" }
   ],
   formEndpoint: "",   // optional: Formspree/Getform URL for the "I want to help" form
   social: [           // e.g. { name: "Facebook", url: "https://facebook.com/..." }
@@ -29,7 +28,7 @@ const TAKAMO = {
     if (TAKAMO.donateUrl) { a.href = TAKAMO.donateUrl; a.target = "_blank"; a.rel = "noopener"; }
   });
   const dlist = $("[data-donate-list]");
-  if (dlist) dlist.innerHTML = TAKAMO.donate.map(d => `<div><dt>${d.method}</dt><dd>${d.detail}</dd></div>`).join("");
+  if (dlist) dlist.innerHTML = TAKAMO.donate.map(d => `<div><dt>${d.method}</dt><dd>${d.detail}${d.name ? `<small>Name: ${d.name}</small>` : ""}</dd></div>`).join("");
 
   /* Contact details */
   const soon = t => `<span class="muted">${t} coming soon</span>`;
