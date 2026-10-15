@@ -14,7 +14,7 @@ const TAKAMO = {
   social: [           // e.g. { name: "Facebook", url: "https://facebook.com/..." }
     { name: "TikTok @takamo237", url: "https://www.tiktok.com/@takamo237" },
     { name: "Instagram @takamo237", url: "https://www.instagram.com/takamo237" },
-    { name: "Facebook: Takamo Helping Hands THH", url: "" },   // paste page link when ready
+    { name: "Facebook: Takamo Helping Hands THH", url: "https://www.facebook.com/share/1FHQfFg6L5/" },
     { name: "YouTube: Takamo Helping Hands THH", url: "" }     // paste channel link when ready
   ]
 };
