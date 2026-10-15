@@ -3,9 +3,16 @@ const TAKAMO = {
   email: "",          // e.g. "info@takamohelpinghands.org"
   phone: "",          // e.g. "(555) 555-0123"
   location: "Buea, Cameroon",
-  donateUrl: "",      // your donation page (PayPal, Zeffy, GoFundMe, Givebutter…)
+  donateUrl: "",      // your online donation page (PayPal, Zeffy, GoFundMe…) — leave empty to use the options below
+  // Donation details shown in the "Ways to donate" box. Replace "To be added" when ready.
+  donate: [
+    { method: "MTN Mobile Money", detail: "To be added" },
+    { method: "Orange Money", detail: "To be added" },
+    { method: "Online (card / PayPal)", detail: "To be added" }
+  ],
   formEndpoint: "",   // optional: Formspree/Getform URL for the "I want to help" form
   social: [           // e.g. { name: "Facebook", url: "https://facebook.com/..." }
+    { name: "TikTok @takamo237", url: "https://www.tiktok.com/@takamo237" }
   ]
 };
 /* =========================================================================== */
@@ -18,8 +25,8 @@ const TAKAMO = {
   $$("[data-donate]").forEach(a => {
     if (TAKAMO.donateUrl) { a.href = TAKAMO.donateUrl; a.target = "_blank"; a.rel = "noopener"; }
   });
-  const dn = $("[data-donate-note]");
-  if (dn && !TAKAMO.donateUrl) dn.textContent = "Online giving is coming soon. To give today, please contact us.";
+  const dlist = $("[data-donate-list]");
+  if (dlist) dlist.innerHTML = TAKAMO.donate.map(d => `<div><dt>${d.method}</dt><dd>${d.detail}</dd></div>`).join("");
 
   /* Contact details */
   const soon = t => `<span class="muted">${t} coming soon</span>`;
