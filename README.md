@@ -3,6 +3,8 @@
 Website for Takamo Helping Hands, a humanitarian organization. Static site (HTML, CSS, JS), no build step.
 
 ## Fill in
+Founder photo: add `images/founder.jpg` (portrait works best).
+
 Top of `script.js` (`TAKAMO`): email, phone, location, donation link (PayPal, Zeffy, Givebutter, etc.), an optional Formspree link for the "I want to help" form, and social links. Everything on the page updates from there.
 
 ## Run locally

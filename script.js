@@ -2,7 +2,7 @@
 const TAKAMO = {
   email: "",          // e.g. "info@takamohelpinghands.org"
   phone: "",          // e.g. "(555) 555-0123"
-  location: "",       // e.g. "Houston, Texas"
+  location: "Buea, Cameroon",
   donateUrl: "",      // your donation page (PayPal, Zeffy, GoFundMe, Givebutter…)
   formEndpoint: "",   // optional: Formspree/Getform URL for the "I want to help" form
   social: [           // e.g. { name: "Facebook", url: "https://facebook.com/..." }
