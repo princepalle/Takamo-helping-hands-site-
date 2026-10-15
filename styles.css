@@ -109,8 +109,10 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 .restore-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 2fr); gap: clamp(28px, 4vw, 56px); align-items: start; }
 .restore-grid .head { position: sticky; top: 110px; margin-bottom: 0; }
 .restore .vid-row { max-width: none; }
-.vid-row.five { grid-template-columns: repeat(5, 1fr); max-width: none; }
-.vid-row.five .vid b { font-size: .95rem; } .vid-row.five .vid span { font-size: .86rem; }
+.vid-row.six { grid-template-columns: repeat(6, 1fr); max-width: none; gap: 14px; }
+.vid-row.four { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.vid-row.six .vid figcaption, .vid-row.four .vid figcaption { padding: 12px 12px 14px; }
+.vid-row.six .vid b, .vid-row.four .vid b { font-size: .9rem; } .vid-row.six .vid span, .vid-row.four .vid span { font-size: .82rem; line-height: 1.45; display: block; }
 .restore .gal.three { grid-template-columns: repeat(3, 1fr); margin-top: 18px; }
 .restore .vid { background: var(--paper); }
 .gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
@@ -247,7 +249,8 @@ input:focus, textarea:focus { outline: none; border-color: var(--amber); box-sha
   .vid-grid .vid.tall { grid-column: auto; grid-row: auto; }
   .gal { grid-template-columns: repeat(2, 1fr); }
   .vid-voices { grid-template-columns: 1fr .5fr; }
-  .vid-row.five { grid-template-columns: repeat(3, 1fr); }
+  .vid-row.six { grid-template-columns: repeat(3, 1fr); }
+  .vid-row.four { grid-template-columns: repeat(2, 1fr); }
   .gal figure.wide, .gal figure.wide:first-child { aspect-ratio: 16 / 10; }
 }
 @media (max-width: 820px) {
@@ -265,7 +268,7 @@ input:focus, textarea:focus { outline: none; border-color: var(--amber); box-sha
   .ways, .row, .checks, .info, .values, .vid-grid { grid-template-columns: 1fr; }
   .vid.tall { max-width: 320px; }
   .vid-voices { grid-template-columns: 1fr 1fr; }
-  .vid-row, .vid-row.five { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; }
+  .vid-row, .vid-row.six, .vid-row.four { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; }
   .vid-row .vid { scroll-snap-align: start; box-shadow: none; }
   .vid-row .vid.tall, .vid-voices .vid.tall { max-width: none; }
   .vid-row .vid b { font-size: .92rem; } .vid-row .vid span { font-size: .84rem; }
