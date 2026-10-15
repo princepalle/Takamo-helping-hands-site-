@@ -12,7 +12,7 @@ const TAKAMO = {
   ],
   formEndpoint: "",   // optional: Formspree/Getform URL for the "I want to help" form
   social: [           // e.g. { name: "Facebook", url: "https://facebook.com/..." }
-    { name: "TikTok @takamo237", url: "https://www.tiktok.com/@takamo237" },
+    { name: "TikTok @takamo237", url: "https://vm.tiktok.com/ZS9Uh9cALBexJ-8oF9k/" },
     { name: "Instagram @takamo237", url: "https://www.instagram.com/takamo237" },
     { name: "Facebook: Takamo Helping Hands THH", url: "https://www.facebook.com/share/1FHQfFg6L5/" },
     { name: "YouTube: Takamo Helping Hands THH", url: "" }     // paste channel link when ready
