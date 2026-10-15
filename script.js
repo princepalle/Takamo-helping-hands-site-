@@ -2,7 +2,7 @@
 const TAKAMO = {
   email: "takamofoundationthh@gmail.com",
   phone: "+237671610788",
-  location: "Muea, Buea · Southwest Region, Cameroon",
+  location: "Muea-Buea, Southwest Cameroon",
   donateUrl: "",      // your online donation page (PayPal, Zeffy, GoFundMe…) — leave empty to use the options below
   // Donation details shown in the "Ways to donate" box. Replace "To be added" when ready.
   donate: [
